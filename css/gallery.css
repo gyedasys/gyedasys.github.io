@@ -1,0 +1,2014 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  padding-bottom: 0px;
+  color: #4b4b4b;
+  background-color: #3a3a40;
+  opacity: 0.9;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+/* css for styling nav bar*/
+     /* Add a dark background color with a little bit see-through */
+.navbar {
+    margin-bottom: 0;
+    background-color: #6d3d30;
+    padding-left: 10px;
+    padding-right: 45px;
+    border: 0;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+/*css for styling navbar-brand or logo*/
+.navbar-brand{
+   font-size: 35px;
+   font-weight: 65px;
+   letter-spacing: 3px;
+   padding-left: 30px;
+   padding-top: 20px;
+   opacity: 1;
+}
+
+.nav{
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px;
+   padding-bottom: 8px;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+.navbar li a{
+    border-bottom: 3px solid transparent;
+}
+
+/* On hover, the links will turn black */
+.navbar-nav li a:hover {
+    color: #f00 !important;
+    border-bottom-color: #f00;
+    outline: 0;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: black !important;
+    background-color: transparent !important;
+    border-bottom-color: black;
+    outline: 0;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #6d3d30 ;
+    border-bottom-color: black;
+    background-color: transparent !important;
+}
+
+/* Dropdown links */
+.navbar-nav .dropdown-menu li a {
+    color: #6d3d30 !important;
+}
+.dropdown-menu li a:active {
+    color: #6d3d30 !important;
+    outline: 0;
+}
+.navbar-nav .dropdown-menu li a:active {
+    color: #6d3d30 !important;
+    outline: 0;
+}
+
+/* On hover, the dropdown links will turn black */
+.dropdown-menu li a:hover {
+    background-color: transparent !important;
+    outline: 0;
+}
+.navbar-nav .dropdown-menu li a:hover {
+    background-color: black !important;
+    border-color: transparent;
+    outline: 0;
+}
+
+.navbar-nav .dropdown li a{
+    color: #6d3d30;
+    background-color: transparent !important;
+}
+.navbar-nav .dropdown li a:active{
+    color: #6d3d30;
+    background-color: black !important;
+    outline: 0;
+}
+
+/* CUSTOMIZE THE CONTAINERS
+-------------------------------------------------- */
+.bg-gal{
+   margin-top:0px;
+   background-color: #fff;
+   color: #6d3d30;
+   font-size: inherit;
+   height: inherit;
+   overflow: auto;
+}
+.bg-gal a{
+   color: white;
+   text-decoration: none;
+}
+.bg-gal a:hover{
+   color: #15c698;
+}
+.bg-gal a:active, a:visited{
+   outline: 0;
+}
+.bg-gal .scrollup a{
+   color: #6d3d30;
+   text-decoration: none;
+}
+.bg-gal a.scrollup{
+   color: #6d3d30;
+   text-decoration: none;
+}
+.bg-gal .extras a, a:visited{
+   color: #f00;
+   text-decoration: none;
+}
+.bg-gal .extras a:hover{
+   color: #6d3d30;
+}
+
+/*styling for image slideshow*/
+.css-slideshow{
+   position: relative;
+   max-width: 550px;
+   height: 380px;
+   margin: 1em auto .5em auto;
+}
+.css-slideshow figure{
+   margin: auto;
+   position: absolute;
+}
+.css-slideshow figcaption{
+   position: absolute;
+   top: 0;
+   color: #fff;
+   background: rgba(0,0,0, .3);
+   font-size: .8em;
+   padding: 8px 12px;
+   opacity: 0;
+   transition: opacity .5s;
+}
+.css-slideshow:hover figure figcaption{
+   transition: opacity .5s;
+   opacity: 1;
+}
+.css-slideshow figure{
+   opacity:0;
+}
+/*staggering the animation*/
+figure:nth-child(1) {
+   animation: xfade 45s 40s infinite;
+}
+figure:nth-child(2) {
+   animation: xfade 45s 35s infinite;
+}
+figure:nth-child(3) {
+   animation: xfade 45s 30s infinite;
+}
+figure:nth-child(4) {
+   animation: xfade 45s 25s infinite;
+}
+figure:nth-child(5) {
+   animation: xfade 45s 20s infinite;
+}
+figure:nth-child(6) {
+   animation: xfade 45s 15s infinite;
+}
+figure:nth-child(7) {
+   animation: xfade 45s 10s infinite;
+}
+figure:nth-child(8) {
+   animation: xfade 45s 5s infinite;
+}
+figure:nth-child(9) {
+   animation: xfade 45s 0s infinite;
+}
+figure:nth-child(10) {
+   animation: xfade 45s 15s infinite;
+}
+figure:nth-child(11) {
+   animation: xfade 45s 10s infinite;
+}
+figure:nth-child(12) {
+   animation: xfade 45s 5s infinite;
+}
+figure:nth-child(13) {
+   animation: xfade 45s 0s infinite;
+}
+figure:nth-child(14) {
+   animation: xfade 45s 15s infinite;
+}
+figure:nth-child(15) {
+   animation: xfade 45s 10s infinite;
+}
+figure:nth-child(16) {
+   animation: xfade 45s 5s infinite;
+}
+figure:nth-child(17) {
+   animation: xfade 45s 0s infinite;
+}
+/*timing the animation*/
+@keyframes xfade{
+   0%{
+      opacity: 1;
+   }
+   11.1%{
+      opacity: 1;
+   }
+   15.1%{
+      opacity: 0;
+   }
+   98% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
+}
+
+/*styling for thumbnails*/
+.thumbnail {
+   color: #000031;
+   margin-top: 5px;
+   padding: 1 1 1 1px;
+   display: inline-block;
+   margin-bottom: 0px;
+   line-height: 1.42857143;
+   background-color: #fff;
+   border: 1px solid #6d3d30;
+   border-radius: 4px;
+   text-align: center;
+   outline: 0;
+}
+.thumbnail > img,
+.thumbnail a > img {
+   margin-right: auto;
+   margin-left: auto;
+   height: 95px;
+   width: 175px;
+   background: transparent;
+   outline: 0;
+}
+.thumbnail a:hover > img {
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 100%;
+   max-height: 100%;
+   outline: 0;
+}
+div.thumbnail:hover,
+div.thumbnail:focus,
+div.thumbnail.active {
+   border-color: #f00;
+   outline: 0;
+   opacity: 0.7;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+   border-color: #f00;
+   opacity: 0.7;
+   outline: 0;
+}
+.thumbnail .caption {
+   padding: 9px;
+   color: #333;
+}
+
+/*styling of modal*/
+.modal {
+  position: fixed;
+  top: 70px;
+  right: 350px;
+  bottom: 0px;
+  left: 350px;
+  z-index: 1050;
+  display: none;
+  outline: 0;
+}
+.modal-header {
+  padding: 5px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 5px;
+}
+.modal-footer {
+  padding: 0px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+/*styling for image on headers*/
+.headers{
+   position: absolute;
+   margin-top: 125px;
+   margin-left: 450px;
+}
+
+/*styling for buttons in body*/
+.btn-default:hover{
+   color:#333;
+   background-color:#d4d4d4;
+   border-color:#8c8c8c;
+   }
+
+/*styling for glyphicons*/
+ .glyphicon-hand-up{
+    padding-top: 605px;
+    padding-right: 100px;
+    margin-right: 50px;
+    background-color: transparent;
+    height: 200px;
+    width: 0px;
+    position: fixed;
+ }
+
+ /*styling for anchors*/
+.scrollup{
+    color: #fff;
+	height:40px;
+	width:40px;
+	font-size:25px;
+	line-height:30px;
+	text-align:center;
+	text-decoration:none;
+	position:fixed;
+    bottom: 40px;
+	right:150px;
+	opacity:0,5;
+	border-radius:50%;
+	z-index:999;
+}
+a.scrollup:hover{
+	color: #15c698;
+}
+
+ /*styling for footer */
+ .extras{
+      color: #6d3d30;
+      margin-top: 100px;
+      margin-left: 3px;
+      margin-right: 0px;
+ }
+   .footer{
+      padding-top: 10px;
+      padding-left: 25px;
+	  padding-right: 55px;
+	  padding-bottom: 15px;
+   }
+.footer a{
+    color: #15c698;
+ }
+
+/*styling gallery container*/
+.gallery{
+     margin-top: 40px;
+     padding-top: 30px;
+     overflow: hidden;
+}
+.row-gal{
+     margin-top: 0px;
+     padding-top: 0px;
+}
+.col-gal{
+     display: inline-block;
+}
+.gal-img{
+        height: 95px;
+        width: 175px;
+        margin-top: 5px;
+        margin-left: 1px;
+        margin-right: 1px;
+        display: inline-block;
+}
+img:hover.gal-img{
+     border: 1px solid #6d3d30;
+     text-decoration: none;
+}
+
+.more_pics{
+    margin-top: 30px;
+}
+a.more_pics , a:active.more_pics, a:visited.more_pics{
+     color: #f00;
+     text-decoration: none;
+     border-color: transparent;
+     outline: 0;
+}
+.more_pics a:hover{
+     color: #6d3d30;
+     text-decoration: none;
+     border-style: none;
+}
+
+/*styling for breadcrumbs */
+.breadcrumb {
+  padding: 8px 15px;
+  margin-top: 120px;
+  margin-bottom: 0px;
+  list-style: none;
+  background-color: black;
+  border-radius: 4px;
+  width: 200px;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 1;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  z-index: 1;
+  color: #fff;
+  content: "/\00a0";
+}
+.breadcrumb > .active {
+  color: #6d3d30;
+}
+.breadcrumb > a {
+  color: #fff;
+}
+.breadcrumb > a:active, a:visited {
+  color: #fff;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 230px) {
+/*styling of navigation bar for media with min-width 230px*/
+   .logo{
+       width: 50px;
+       height: 50px;
+   }
+   .navbar-brand{
+      font-size: 30px;
+      font-weight: 65px;
+      letter-spacing: 2px;
+      padding-left: 10px;
+      padding-top: 15px;
+   }
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .navbar-toggle {
+    margin-right: -30px;
+  }
+  .navbar-nav > li > a {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    line-height: 20px;
+    border-style: none;
+  }
+  .navbar-collapse.collapse {
+    height: inherit !important;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 160px;
+  }
+  .navbar-nav .open .dropdown-menu {
+    margin-top: -10px;
+    margin-left: 45px;
+    margin-right: 0px;
+    padding-right: 0px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+  }
+  /* Dropdown links */
+  .navbar-nav .dropdown-menu li a {
+      font-size: 12px;
+      margin-top: -5px;
+      color: #6d3d30 !important;
+      margin-left: 0px;
+      border-color: transparent;
+  }
+  .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+
+  /* On hover, the dropdown links will turn black */
+  .dropdown-menu li a:hover {
+      background-color: transparent !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:hover {
+      background-color: black !important;
+      margin-top: -4px;
+      border-color: transparent;
+      outline: 0;
+  }
+
+  .navbar-nav .dropdown li a{
+      color: #6d3d30;
+      background-color: transparent !important;
+  }
+  .navbar-nav .dropdown li a:active{
+      color: #6d3d30;
+      background-color: black !important;
+      outline: 0;
+  }
+
+/*styling of container for media with min-width 230px*/
+  .bg-gal{
+     font-size: 12px;
+     height: inherit;
+     overflow: auto;
+  }
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 55px;
+     }
+     .bg-gal img.headers{
+       width: 24px;
+       height: 20px;
+     }
+     .bg-gal h1{
+        padding-top: 95px;
+        font-size: 27px;
+        padding-bottom: 60px;
+     }
+     .bg-gal h4{
+        padding-top: 0px;
+        font-size: 14px;
+     }
+     .bg-gal p{
+        padding-left: 0px;
+        padding-right: 0px;
+        align: center;
+     }
+
+  /*styling gallery container*/
+  .gallery{
+       margin-top: 40px;
+       padding-top: 10px;
+       overflow: hidden;
+  }
+  .row-gal{
+       margin-top: 0px;
+       padding-top: 0px;
+  }
+  .col-gal{
+       display: inline-block;
+  }
+  .gal-img{
+          height: 85px;
+          width: 100px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 20px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail {
+       background-color: #fff;
+       font-size: 12px;
+       color: #6d3d30;
+       padding: 0 0 0 0px;
+   }
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 85px;
+      width: 100px;
+      outline: 0;
+   }
+   .thumbnail a:active, a:visited > img {
+      outline: 0;
+   }
+
+/*styling of modal for thumbnail photos*/
+   .modal {
+     top: 120px;
+     bottom: 10px;
+     right: 0px;
+     left: 20px;
+     width: 240px;
+     height: 485px;
+   }
+
+/*styling for breadcrumbs */
+.breadcrumb {
+  padding-left: 5px;
+  margin-top: 170px;
+  margin-left: 0px;
+  margin-right: -10px;
+  margin-bottom: 0px;
+  width: 100px;
+  font-size: 11px;
+}
+   .breadcrumb > li + li:before {
+       padding-left: 0px;
+       padding-right: 0px;
+       color: #fff;
+   }
+   .breadcrumb > a{
+       color: #fff;
+   }
+   .breadcrumb > a:hover {
+       color: #f00;
+   }
+   .breadcrumb > a:active, a:visited {
+       color: #fff;
+   }
+
+/*styling for hand*/
+.scrollup{
+    color: #6d3d30;
+	height:0px;
+	width:0px;
+	font-size:20px;
+	line-height:30px;
+    bottom: 40px;
+	right: 20px;
+}
+ .glyphicon-hand-up{
+    padding-top: 370px;
+    padding-right: 0px;
+    margin-right: 100px;
+    height: 200px;
+    width: 0px;
+ }
+}
+
+@media (min-width: 388px) {
+/*styling of navigation bar for min-width 388px*/
+   .logo{
+       width: 50px;
+       height: 50px;
+   }
+   .navbar-brand{
+      font-size: 30px;
+      font-weight: 65px;
+      letter-spacing: 2px;
+      padding-left: 10px;
+      padding-top: 15px;
+   }
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .navbar-toggle {
+    margin-right: -30px;
+  }
+  .navbar-nav > li > a {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    line-height: 20px;
+    border-style: none;
+
+  }
+  .navbar-collapse.collapse {
+    height: inherit !important;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 160px;
+  }
+  .navbar-nav .open .dropdown-menu {
+    margin-top: -11px;
+    margin-left: 97px;
+    margin-right: 0px;
+    padding-right: 0px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+  }
+  /* Dropdown links */
+  .navbar-nav .dropdown-menu li a {
+      font-size: 12px;
+      margin-top: -5px;
+      color: #6d3d30 !important;
+      margin-left: 0px;
+      border-color: transparent;
+  }
+  .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+
+  /* On hover, the dropdown links will turn black */
+  .dropdown-menu li a:hover {
+      background-color: transparent !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:hover {
+      background-color: black !important;
+      margin-top: -4px;
+      border-color: transparent;
+      outline: 0;
+  }
+
+  .navbar-nav .dropdown li a{
+      color: #6d3d30;
+      background-color: transparent !important;
+  }
+  .navbar-nav .dropdown li a:active{
+      color: #6d3d30;
+      background-color: black !important;
+      outline: 0;
+  }
+
+/*styling of container for media with min-width 388px*/
+  .bg-gal{
+     font-size: 12px;
+     height: inherit;
+     overflow: auto;
+  }
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 90px;
+     }
+     .bg-gal img.headers{
+       width: 24px;
+       height: 20px;
+     }
+     .bg-gal h1{
+        padding-top: 95px;
+        font-size: 27px;
+        padding-bottom: 60px;
+     }
+     .bg-gal h4{
+        padding-top: 0px;
+        font-size: 14px;
+     }
+
+  /*styling gallery container*/
+  .gal-img{
+          height: 85px;
+          width: 100px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 20px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 85px;
+      width: 100px;
+      outline: 0;
+   }
+
+/*styling of modal*/
+   .modal_gal {
+     top: 120px;
+     bottom: 0px;
+     right: 10px;
+     left: 10px;
+     height: 445px;
+   }
+
+/*styling for breadcrumbs */
+   .breadcrumb {
+       padding-left: 5px;
+       margin-top: 170px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       width: 95px;
+       font-size: 11px;
+}
+.breadcrumb > li + li:before {
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #fff;
+}
+.breadcrumb > a{
+  color: #fff;
+}
+.breadcrumb > a:hover {
+  color: #f00;
+}
+.breadcrumb > a:active, a:visited {
+  color: #fff;
+}
+
+/*styling for hand*/
+.scrollup{
+    color: #6d3d30;
+	height:0px;
+	width:0px;
+	font-size:20px;
+	line-height:30px;
+    bottom: 40px;
+	right: 40px;
+}
+ .glyphicon-hand-up{
+    padding-top: 445px;
+    padding-right: 0px;
+    margin-right: 100px;
+    height: 200px;
+    width: 0px;
+ }
+}
+
+@media (min-width: 506px) {
+/*styling of navigation bar for min-width 506px*/
+   .logo{
+       width: 50px;
+       height: 50px;
+   }
+   .navbar-brand{
+      font-size: 30px;
+      font-weight: 65px;
+      letter-spacing: 2px;
+      padding-left: 10px;
+      padding-top: 15px;
+   }
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .navbar-toggle {
+    margin-right: -30px;
+  }
+  .navbar-nav > li > a {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    line-height: 20px;
+    border-style: none;
+  }
+  .navbar-collapse.collapse {
+    height: inherit !important;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 160px;
+  }
+  .navbar-nav .open .dropdown-menu {
+    margin-top: -11px;
+    margin-left: 97px;
+    margin-right: 0px;
+    padding-right: 0px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+  }
+  /* Dropdown links */
+  .navbar-nav .dropdown-menu li a {
+      font-size: 12px;
+      margin-top: -5px;
+      color: #6d3d30 !important;
+      margin-left: 0px;
+      border-color: transparent;
+  }
+  .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+
+  /* On hover, the dropdown links will turn black */
+  .dropdown-menu li a:hover {
+      background-color: transparent !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:hover {
+      background-color: black !important;
+      margin-top: -4px;
+      border-color: transparent;
+      outline: 0;
+  }
+
+  .navbar-nav .dropdown li a{
+      color: #6d3d30;
+      background-color: transparent !important;
+  }
+  .navbar-nav .dropdown li a:active{
+      color: #6d3d30;
+      background-color: black !important;
+      outline: 0;
+  }
+
+/*styling of container for media with min-width 506px*/
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 150px;
+     }
+     .bg-gal img.headers{
+       width: 24px;
+       height: 20px;
+     }
+
+  /*styling gallery container*/
+  .gal-img{
+          height: 85px;
+          width: 100px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 20px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 85px;
+      width: 100px;
+      outline: 0;
+   }
+
+/*styling of modal*/
+   .modal {
+     top: 70px;
+     right: 10px;
+     bottom: 0px;
+     left: 10px;
+   }
+
+/*styling for breadcrumbs */
+   .breadcrumb {
+       padding-left: 5px;
+       margin-top: 170px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       width: 120px;
+       font-size: 11px;
+}
+.breadcrumb > li + li:before {
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #fff;
+}
+.breadcrumb > a{
+  color: #fff;
+}
+.breadcrumb > a:hover {
+  color: #f00;
+}
+.breadcrumb > a:active, a:visited {
+  color: #fff;
+}
+
+/*styling for hand*/
+.scrollup{
+    color: #6d3d30;
+	height:0px;
+	width:0px;
+	font-size:20px;
+	line-height:30px;
+    bottom: 40px;
+	right: 40px;
+}
+ .glyphicon-hand-up{
+    padding-top: 455px;
+    padding-right: 0px;
+    margin-right: 100px;
+    height: 200px;
+    width: 0px;
+ }
+}
+
+@media (min-width: 630px) {
+/*styling of navigation bar for min-width 630px*/
+   .logo{
+       width: 60px;
+       height: 60px;
+   }
+   .navbar-brand{
+      font-size: 30px;
+      font-weight: 65px;
+      letter-spacing: 2px;
+      padding-left: 15px;
+      padding-top: 18px;
+   }
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+  }
+  .navbar-toggle {
+    margin-top: 10px;
+    margin-right: -25px;
+  }
+  .navbar-nav > li > a {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    line-height: 20px;
+    border-style: none;
+  }
+  .navbar-collapse.collapse {
+    height: inherit !important;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 160px;
+  }
+  .navbar-nav .open .dropdown-menu {
+    margin-top: -11px;
+    margin-left: 97px;
+    margin-right: 0px;
+    padding-right: 0px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+  }
+  /* Dropdown links */
+  .navbar-nav .dropdown-menu li a {
+      font-size: 12px;
+      margin-top: -5px;
+      color: #6d3d30 !important;
+      margin-left: 0px;
+      border-color: transparent;
+  }
+  .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  /* On hover, the dropdown links will turn black */
+  .dropdown-menu li a:hover {
+      background-color: transparent !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:hover {
+      background-color: black !important;
+      margin-top: -4px;
+      border-color: transparent;
+      outline: 0;
+  }
+  .navbar-nav .dropdown li a{
+      color: #6d3d30;
+      background-color: transparent !important;
+  }
+  .navbar-nav .dropdown li a:active{
+      color: #6d3d30;
+      background-color: black !important;
+      outline: 0;
+  }
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+/*styling of container for media with min-width 630px*/
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 190px;
+     }
+     .bg-gal img.headers{
+       width: 30px;
+       height: 25px;
+     }
+     .bg-gal h1{
+        padding-top: 95px;
+        font-size: 35px;
+        padding-bottom: 60px;
+     }
+     .bg-gal h4{
+        padding-top: 0px;
+        font-size: 16px;
+     }
+
+  /*styling gallery container*/
+  .gal-img{
+          height: 85px;
+          width: 100px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 20px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 85px;
+      width: 100px;
+      outline: 0;
+   }
+
+/*styling of modal*/
+   .modal {
+     top: 70px;
+     right: 10px;
+     bottom: 0px;
+     left: 10px;
+   }
+
+/*styling for breadcrumbs */
+   .breadcrumb {
+       padding-left: 7px;
+       margin-top: 170px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       width: 140px;
+       font-size: 13px;
+}
+.breadcrumb > li + li:before {
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #fff;
+}
+.breadcrumb > a{
+  color: #fff;
+}
+.breadcrumb > a:hover {
+  color: #f00;
+}
+.breadcrumb > a:active, a:visited {
+  color: #fff;
+}
+
+/*styling for hand*/
+.scrollup{
+    color: #6d3d30;
+	height:0px;
+	width:0px;
+	font-size:20px;
+	line-height:30px;
+    bottom: 40px;
+	right: 40px;
+}
+ .glyphicon-hand-up{
+    padding-top: 545px;
+    padding-right: 0px;
+    margin-right: 100px;
+    height: 200px;
+    width: 0px;
+ }
+}
+
+@media (min-width: 768px) {
+/*styling of navigation bar for min-width 768px*/
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+   .navbar-brand{
+      font-size: 35px;
+      font-weight: 65px;
+      letter-spacing: 2px;
+      padding-left: 15px;
+      padding-top: 22px;
+   }
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-nav > li > a {
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    line-height: 20px;
+  }
+  .navbar-collapse.collapse {
+    height: inherit !important;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  /* Dropdown links */
+  .navbar-nav .dropdown-menu li a {
+      font-size: 13px;
+      margin-top: 0px;
+      color: #6d3d30 !important;
+      margin-left: 0px;
+      border-color: transparent;
+  }
+  .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  /* On hover, the dropdown links will turn black */
+  .dropdown-menu li a:hover {
+      background-color: transparent !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:hover {
+      background-color: black !important;
+      margin-top: 0px;
+      border-color: transparent;
+      outline: 0;
+  }
+  .navbar-nav .dropdown li a{
+      color: #6d3d30;
+      background-color: transparent !important;
+  }
+  .navbar-nav .dropdown li a:active{
+      color: #6d3d30;
+      background-color: black !important;
+      outline: 0;
+  }
+   .nav{
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+   }
+
+/*styling of container for media with min-width 768px*/
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 250px;
+     }
+     .bg-gal img.headers{
+       width: 30px;
+       height: 25px;
+     }
+
+  /*styling gallery container*/
+  .gal-img{
+          height: 85px;
+          width: 100px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 20px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 85px;
+      width: 100px;
+      outline: 0;
+   }
+
+/*styling of modal of thumbnail photos*/
+  .gal{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal {
+     top: 120px;
+     right: 260px;
+     left: 20px;
+     width: 500px;
+     height: 485px;
+     bottom: 0px;
+   }
+/*styling for modal of additional photos*/
+  .gal_more{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal_more {
+     top: 120px;
+     right: 260px;
+     left: 20px;
+     width: 500px;
+     height: 485px;
+     bottom: 0px;
+   }
+
+/*styling for breadcrumbs */
+   .breadcrumb {
+       padding-left: 7px;
+       margin-top: 170px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       width: 110px;
+       font-size: 13px;
+}
+.breadcrumb > li + li:before {
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #fff;
+}
+.breadcrumb > a{
+  color: #fff;
+}
+.breadcrumb > a:hover {
+  color: #f00;
+}
+.breadcrumb > a:active, a:visited {
+  color: #fff;
+}
+
+/*styling for hand*/
+.scrollup{
+    color: #6d3d30;
+	height:0px;
+	width:0px;
+	font-size:20px;
+	line-height:30px;
+    bottom: 40px;
+	right: 90px;
+}
+ .glyphicon-hand-up{
+    padding-top: 565px;
+    padding-right: 0px;
+    margin-right: 100px;
+    height: 200px;
+    width: 0px;
+ }
+}
+
+@media (min-width: 887px) {
+/*styling of navigation bar for min-width 887px*/
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+   .navbar-brand{
+      font-size: 35px;
+      font-weight: 65px;
+      letter-spacing: 2px;
+      padding-left: 15px;
+      padding-top: 25px;
+   }
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-nav > li > a {
+    font-size: inherit;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    line-height: 20px;
+  }
+  .navbar-collapse.collapse {
+    height: inherit !important;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  /* Dropdown links */
+  .navbar-nav .dropdown-menu li a {
+      font-size: inherit;
+      margin-top: 0px;
+      color: #6d3d30 !important;
+      margin-left: 0px;
+      border-color: transparent;
+  }
+  .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  /* On hover, the dropdown links will turn black */
+  .dropdown-menu li a:hover {
+      background-color: transparent !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:hover {
+      background-color: black !important;
+      margin-top: 0px;
+      border-color: transparent;
+      outline: 0;
+  }
+  .navbar-nav .dropdown li a{
+      color: #6d3d30;
+      background-color: transparent !important;
+  }
+  .navbar-nav .dropdown li a:active{
+      color: #6d3d30;
+      background-color: black !important;
+      outline: 0;
+  }
+
+/*styling of container for media with min-width 887px*/
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 250px;
+     }
+     .bg-gal img.headers{
+       width: 30px;
+       height: 25px;
+     }
+
+  /*styling gallery container*/
+  .gal-img{
+          height: 85px;
+          width: 100px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 30px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 85px;
+      width: 100px;
+      outline: 0;
+   }
+
+/*styling of modal of thumbnail photos*/
+  .gal{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal {
+     top: 120px;
+     right: 260px;
+     left: 80px;
+     width: 500px;
+     height: 485px;
+     bottom: 0px;
+   }
+/*styling for modal of additional photos*/
+  .gal_more{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal_more {
+     top: 120px;
+     right: 260px;
+     left: 80px;
+     width: 500px;
+     height: 485px;
+     bottom: 0px;
+   }
+
+/*styling for breadcrumbs */
+   .breadcrumb {
+       padding-left: 7px;
+       margin-top: 170px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       width: 110px;
+       font-size: 13px;
+}
+.breadcrumb > li + li:before {
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #fff;
+}
+.breadcrumb > a{
+  color: #fff;
+}
+.breadcrumb > a:hover {
+  color: #f00;
+}
+.breadcrumb > a:active, a:visited {
+  color: #fff;
+}
+
+/*styling for the hand*/
+.scrollup{
+    color: #6d3d30;
+	height:0px;
+	width:0px;
+	font-size:20px;
+	line-height:30px;
+    bottom: 40px;
+	right: 150px;
+}
+ .glyphicon-hand-up{
+    padding-top: 590px;
+    padding-right: 0px;
+    margin-right: 100px;
+    height: 220px;
+    width: 0px;
+ }
+}
+
+@media (min-width: 992px) {
+/*styling of navigation bar for min-width 992px*/
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+   .navbar-brand{
+      font-size: 40px;
+      font-weight: 65px;
+      letter-spacing: 2px;
+      padding-left: 15px;
+      padding-top: 25px;
+   }
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-nav > li > a {
+    font-size: inherit;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    line-height: 20px;
+  }
+  .navbar-collapse.collapse {
+    height: inherit !important;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  /* Dropdown links */
+  .navbar-nav .dropdown-menu li a {
+      font-size: inherit;
+      margin-top: 0px;
+      color: #6d3d30 !important;
+      margin-left: 0px;
+      border-color: transparent;
+  }
+  .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:active {
+      color: #6d3d30 !important;
+      outline: 0;
+  }
+  /* On hover, the dropdown links will turn black */
+  .dropdown-menu li a:hover {
+      background-color: transparent !important;
+      outline: 0;
+  }
+  .navbar-nav .dropdown-menu li a:hover {
+      background-color: black !important;
+      margin-top: 0px;
+      border-color: transparent;
+      outline: 0;
+  }
+  .navbar-nav .dropdown li a{
+      color: #6d3d30;
+      background-color: transparent !important;
+  }
+  .navbar-nav .dropdown li a:active{
+      color: #6d3d30;
+      background-color: black !important;
+      outline: 0;
+  }
+
+/*styling of container for media with min-width 992px*/
+  .bg-gal{
+     font-size: inherit;
+     height: inherit;
+     overflow: auto;
+  }
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 360px;
+     }
+     .bg-gal img.headers{
+       width: 30px;
+       height: 25px;
+     }
+
+  /*styling gallery container*/
+  .gal-img{
+          height: 95px;
+          width: 120px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 30px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 95px;
+      width: 120px;
+      outline: 0;
+   }
+
+/*styling of modal of thumbnail photos*/
+  .gal{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal {
+     top: 120px;
+     right: 260px;
+     left: 80px;
+     width: 600px;
+     height: 485px;
+     bottom: 0px;
+   }
+/*styling for modal of additional photos*/
+  .gal_more{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal_more {
+     top: 120px;
+     right: 260px;
+     left: 80px;
+     width: 600px;
+     height: 485px;
+     bottom: 0px;
+   }
+
+/*styling for the hand*/
+.scrollup{
+    color: #6d3d30;
+	height:0px;
+	width:0px;
+	font-size:20px;
+	line-height:30px;
+    bottom: 40px;
+	right: 100px;
+}
+ .glyphicon-hand-up{
+    padding-top: 590px;
+    padding-right: 0px;
+    margin-right: 100px;
+    height: 220px;
+    width: 0px;
+ }
+
+/*styling for breadcrumbs */
+   .breadcrumb {
+       padding-left: 7px;
+       margin-top: 170px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       width: 120px;
+       font-size: inherit;
+}
+.breadcrumb > li + li:before {
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #fff;
+}
+.breadcrumb > a{
+  color: #fff;
+}
+.breadcrumb > a:hover {
+  color: #f00;
+}
+.breadcrumb > a:active, a:visited {
+  color: #fff;
+}
+}
+
+@media( min-width: 1069px){
+/*styling for container of media with min-width 1069px*/
+.bg-gal{
+     font-size: inherit;
+     height: inherit;
+     overflow: auto;
+  }
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 360px;
+     }
+     .bg-gal img.headers{
+       width: 35px;
+       height: 25px;
+     }
+
+  /*styling gallery container*/
+  .gal-img{
+          height: 100px;
+          width: 130px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 30px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 100px;
+      width: 130px;
+      outline: 0;
+   }
+
+/*styling of modal of thumbnail photos*/
+  .gal{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal {
+     top: 120px;
+     right: 260px;
+     left: 120px;
+     width: 600px;
+     height: 485px;
+     bottom: 0px;
+   }
+/*styling for modal of additional photos*/
+  .gal_more{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal_more {
+     top: 120px;
+     right: 260px;
+     left: 120px;
+     width: 600px;
+     height: 485px;
+     bottom: 0px;
+   }
+
+/*styling for breadcrumbs */
+   .breadcrumb {
+       padding-left: 8px;
+       margin-top: 180px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       width: 120px;
+       font-size: inherit;
+}
+.breadcrumb > li + li:before {
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #fff;
+}
+.breadcrumb > a{
+  color: #fff;
+}
+.breadcrumb > a:hover {
+  color: #f00;
+}
+.breadcrumb > a:active, a:visited {
+  color: #fff;
+}
+
+/*styling for the hand*/
+.scrollup{
+    color: #6d3d30;
+	height: 0px;
+	width: 0px;
+	font-size: 25px;
+	line-height: 30px;
+    bottom: 40px;
+	right: 150px;
+}
+ .glyphicon-hand-up{
+    padding-top: 605px;
+    padding-right: 0px;
+    margin-right: 100px;
+    height: 230px;
+    width: 0px;
+ }
+}
+
+@media( min-width: 1172px){
+/*styling for container of media with min-width 1172px*/
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 360px;
+     }
+
+/*styling for gallery container*/
+  .gal-img{
+          height: 100px;
+          width: 130px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 40px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 100px;
+      width: 130px;
+      outline: 0;
+   }
+
+/*styling of modal of thumbnail photos*/
+  .gal{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal {
+      top: 120px;
+      right: 260px;
+      left: 170px;
+      width: 600px;
+      height: 485px;
+      bottom: 0px;
+    }
+ //*styling for modal of additional photos*/
+  .gal_more{
+          margin-left: 120px;
+          margin-right: 100px;
+  }
+   .modal_more {
+     top: 120px;
+     right: 260px;
+     left: 170px;
+     width: 600px;
+     height: 485px;
+     bottom: 0px;
+   }
+}
+
+@media( min-width: 1200px){
+/*styling for container of media with min-width 1200px*/
+     .bg-gal .headers{
+        margin-top: 120px;
+        margin-left: 460px;
+     }
+
+/*styling for gallery container*/
+  .gal-img{
+          height: 120px;
+          width: 150px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 40px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 120px;
+      width: 150px;
+      outline: 0;
+   }
+
+/*styling of modal of thumbnail photos*/
+  .gal{
+          margin-left: 210px;
+          margin-right: 100px;
+  }
+   .modal {
+     top: 120px;
+     right: 260px;
+     left: 180px;
+     width: 600px;
+     height: 485px;
+     bottom: 0px;
+   }
+/*styling for modal of additional photos*/
+  .gal_more{
+          margin-left: 210px;
+          margin-right: 100px;
+  }
+   .modal_more {
+     top: 120px;
+     right: 260px;
+     left: 180px;
+     width: 600px;
+     height: 455px;
+     bottom: 0px;
+   }
+}
